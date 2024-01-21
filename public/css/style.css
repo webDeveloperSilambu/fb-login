@@ -1,0 +1,222 @@
+:root{
+     --bg-color- : #f0f2f5;
+     --white-color- : #ffffff;
+}
+
+*{
+     margin: 0px;
+     padding: 0px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     border: none;
+     outline: none;
+     text-decoration: none;
+     background: none;
+     box-sizing: border-box;
+}
+
+button{
+     cursor: pointer;
+}
+
+.login_Container{
+     display: flex;
+     width: 100%;
+     height: 100vh;
+     background-color: var(--bg-color-);
+     padding: 10% 12%;
+}
+
+/*--------------Left Container---------------*/
+
+.login_Container .left_Container{
+     width: 100%;
+     padding-top: 4%;
+}
+
+.login_Container .left_Container img{
+     width: 320px;
+}
+
+.login_Container .left_Container p{
+     font-size: 1.8rem;
+     margin: -10px 0px -10px 28px ;
+     font-weight: 500;
+}
+
+
+/*-----------------Right Container------------------*/
+
+.login_Container .right_Container{
+     width: 100%;
+     text-align: center;
+     padding: 0 20px;
+     margin-left: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.login_Container .login_Form{
+     border-radius: 10px;
+     text-align: center;
+     width: 400px;
+     padding: 20px;
+     background-color: var(--white-color-);
+     box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+
+.login_Container .login_Form input{
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #dddfe2;
+     margin: 5px 0px;
+     font-size: 1.2rem;
+     border-radius: 5px;
+     color: #000;
+}
+
+.login_Container .login_Form input:focus{
+     border: 1.5px solid #1877f2;
+}
+
+.login_Container .login_Form hr{
+     width: 100%;
+     height: 1px;
+     background-color: #dddfe2;
+     margin: 20px 0px;
+}
+
+::placeholder{
+     color: #90949c;
+}
+
+.login_Container .login_Form button{
+     cursor: pointer;
+     width: 100%;
+     margin: 10px 0px;
+     padding: 10px;
+     background-color: #1877f2;
+     font-size: 1.5rem;
+     color: var(--white-color-);
+     font-weight: 600;
+     border-radius: 10px;
+}
+
+.login_Container .login_Form #logBtn{
+     margin-bottom: 20px;
+}
+
+.login_Container .login_Form #forgetId{
+     color: #1877f2;
+     font-size: 17px;
+}
+
+.login_Container .login_Form #accBtn{
+     width: 250px;
+     background-color: #36a420;
+     font-weight: 500;
+     font-size: 1.4rem;
+}
+
+.login_Container p{
+     font-size: 1rem;
+     margin: 20px 0px;
+}
+
+.login_Container p a{
+     color: black;
+     font-weight: 600;
+}
+
+/*-------------------Bottom Container---------------------*/
+.bottom_Container{
+     width: 100%;
+     height: 25vh;
+     background-color: var(--white-color-);
+     padding: 1% 15%;
+}
+
+
+.bottom_Container hr{
+     width: 100%;
+     height: 1px;
+     background-color: #dddfe2;
+     margin: 5px 0px;
+}
+
+.bottom_Container .langContainer a , .linkContainer a{
+     font-size: .8rem;
+     color: #3c3c3c;
+     margin-right: 10px;
+}
+
+.linkContainer{
+     height: 50px;
+     align-items: center;
+}
+
+.bottom_Container .linkContainer a{
+     font-size: 1rem;
+     color: #3c3c3c;
+}
+
+.bottom_Container .langContainer button{
+     padding: 0px 5px;
+     font-size: 1.3rem;
+     height: 30px;
+}
+
+.bottom_Container #addBtn{
+     font-size: 1.5rem;
+     padding: 0px;
+}
+
+
+
+
+@media(max-width:900px){
+     .login_Container{
+          display: block;
+          padding: 0px 10px;
+          text-align: center;
+     }
+
+     .login_Container .left_Container{
+          width: 100%;
+          height: 230px;
+          padding: 10px;
+     }
+
+    .login_Container .left_Container p{
+     font-size: 1.5rem;
+    }
+
+     .login_Container .right_Container{
+          width: 100%;
+          height: 400px;
+          margin: 15px 0px;
+          padding: 0px 50px;
+     }
+
+     .login_Container .right_Container .login_Form{
+          width: 400px;
+     }
+
+     .bottom_Container{
+          padding: 20px 30px;
+          height: 100px;
+     }
+     .bottom_Container .linkContainer{
+          height: 25px;
+          margin-bottom: 10px;
+     }
+     .bottom_Container p{
+          padding-bottom: 10px;
+     }
+}
+
+@media(max-width:400px){
+     .login_Container .right_Container .login_Form{
+          width: 350px;
+     }
+}
