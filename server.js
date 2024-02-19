@@ -2,7 +2,7 @@ const express = require('express');
 const MongoClient = require('mongodb').MongoClient;
 const app = express();
 
-const url = "mongodb+srv://SilambarasanDev:webdevSilambu07@cluster0.vy8omlc.mongodb.net/fbdatabase?retryWrites=true&w=majority"
+const url = "mongodb+srv://username:password@cluster0.vy8omlc.mongodb.net/fbdatabase?retryWrites=true&w=majority"
 
 let client = new MongoClient(url);
 
